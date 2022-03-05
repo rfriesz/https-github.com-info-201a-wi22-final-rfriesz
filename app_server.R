@@ -1,4 +1,3 @@
-# Define server logic required to draw a histogram ----
 server <- function(input, output) {
   
 ##  setwd('/Users/ryanf/Desktop/Data Science 201/info-201a-wi22-finalassignment-rfriesz...')

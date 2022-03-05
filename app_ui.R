@@ -1,5 +1,3 @@
-# Define UI for app that draws a histogram ----
-##source("app_server.R")
 dat <-read.csv("https://raw.githubusercontent.com/rfriesz/info-201a-wi22-finalassignment-rfriesz/main/owid-co2-data.csv")
 ui <- fluidPage(theme = shinytheme("cerulean"),
   navbarPage(
