@@ -1,13 +1,16 @@
+data <- read.csv("https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv")
+data <- na.omit(data)
+data <- filter(data, data$country == "United States")
+
+
 server <- function(input, output) {
   
-##  setwd('/Users/ryanf/Desktop/Data Science 201/info-201a-wi22-finalassignment-rfriesz...')
-##  data1 <- read.csv("owid-co2-data.csv")
+  output$plot1 <- renderPlot({
+    plot(data$year, data$co2, xlab = "Years", ylab = "Total CO2 in USA")
+    title(main = "Total CO2 Emissions in USA from 1990 - 2016")
+  })
   
-  
-##  output$avg_2020_country_co2 <- renderPrint({
-##    filter(data, year == 2020) %>%
-##    summarize(data, co2, na.rm = TRUE) %>%
-##    results <- mean(co2)
-##    results  
-##  })
+  output$info <- renderText({
+    paste0("x=", input$plot_click$x, "\ny=", input$plot_click$y)
+  })
 }

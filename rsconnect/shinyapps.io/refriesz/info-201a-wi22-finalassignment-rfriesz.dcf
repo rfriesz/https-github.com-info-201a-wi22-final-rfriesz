@@ -5,9 +5,9 @@ account: refriesz
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 5785413
-bundleId: 5645005
+bundleId: 5669005
 url: https://refriesz.shinyapps.io/info-201a-wi22-finalassignment-rfriesz/
-when: 1646450700.47956
-lastSyncTime: 1646450700.47956
+when: 1646957881.75589
+lastSyncTime: 1646957881.75589
 asMultiple: FALSE
 asStatic: FALSE
